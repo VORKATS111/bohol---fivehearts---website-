@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Bohol Tours - Affordable & Scenic Travel Packages</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind and Font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fbfd;
+        }
+        /* Custom gradient background for CTA */
+        .cta-bg {
+            background-image: linear-gradient(to right, #004d40, #009688);
+        }
+        /* Style for the Hero Section using the composite image (1000084371.jpg) */
+        .hero-bg {
+            background-image: url('https://lgl.one/image?url=https%3A%2F%2Fcdn.discordapp.com%2Fattachments%2F1184340277271926815%2F1257912423185324032%2Fimage.png%3Fex%3D66860d5c%26is%3D6684bc5c%26hm%3D1b5e54d890ac38cd1691c28c6680a6b99b53258595a805c872d82944b2f29393%26');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; 
+        }
+        /* Style for the price badge */
+        .price-badge {
+            background-color: #f97316; /* Orange-600 */
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-weight: bold;
+            font-size: 1.25rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Sticky Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-white shadow-lg">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold text-teal-700 hover:text-teal-900 transition duration-300">
+                Go Bohol Tours
+            </div>
+            <!-- Navigation Links -->
+            <div class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="#destinations" class="text-gray-600 hover:text-teal-600 transition duration-300 p-2 rounded-md">Destinations</a>
+                <a href="#packages" class="text-gray-600 hover:text-teal-600 transition duration-300 p-2 rounded-md">Tour Packages</a>
+                <a href="#contact" class="text-gray-600 hover:text-teal-600 transition duration-300 p-2 rounded-md">Contact Us</a>
+            </div>
+            <!-- Contact Button for Mobile -->
+            <a href="#packages" class="md:hidden bg-teal-600 text-white px-3 py-1 rounded-full text-sm hover:bg-teal-700 transition duration-300 shadow-md">
+                View Deals
+            </a>
+        </nav>
+    </header>
+
+    <!-- Hero Section (General Tourism Focus) -->
+    <section class="relative h-screen flex items-center justify-center text-center overflow-hidden hero-bg">
+        
+        <!-- Dark overlay for text readability -->
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto px-4">
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-white leading-tight mb-4 drop-shadow-lg">
+                Discover Your Next **Unforgettable Adventure** in Bohol
+            </h1>
+            <p class="text-xl text-gray-200 mb-8 font-light drop-shadow-md">
+                The best and most affordable way to experience the Philippines' most beautiful island.
+            </p>
+            <a href="#packages" class="bg-amber-400 text-gray-900 font-bold text-lg px-8 py-3 rounded-xl shadow-2xl hover:bg-amber-300 transition duration-300 transform hover:scale-105 inline-block">
+                Explore Affordable Packages
+            </a>
+        </div>
+    </section>
+
+    <!-- Key Destinations Section (No Change needed here) -->
+    <section id="destinations" class="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-teal-800">
+            Iconic Destinations for Inspiration
+        </h2>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Destination 1: Chocolate Hills & ATV -->
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300">
+                <!-- Image: 1000084363.jpg (Chocolate Hills ATV) -->
+                <img src="https://lgl.one/image?url=https%3A%2F%2Fcdn.discordapp.com%2Fattachments%2F1184340277271926815%2F1257912423982510100%2Fimage.png%3Fex%3D66860d5c%26is%3D6684bc5c%26hm%3D03511874a98ac91d9d93540243e8006b02660fc06e89cd2d61d15fc2a537f7c6%26" 
+                     alt="Chocolate Hills ATV Adventure" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-teal-700">Chocolate Hills & Adventure Park</h3>
+                    <p class="text-sm text-gray-600">The 1,776 cones provide a spectacular backdrop for reflection. Perfect for land-based team challenges (ATV/Bike Zipline).</p>
+                </div>
+            </div>
+
+            <!-- Destination 2: Panglao Beaches -->
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300">
+                <!-- Image: 1000084368.jpg (Panglao Beaches) -->
+                <img src="https://lgl.one/image?url=https%3A%2F%2Fcdn.discordapp.com%2Fattachments%2F1184340277271926815%2F1257912424536297492%2Fimage.png%3Fex%3D66860d5d%26is%3D6684bc5d%26hm%3Dc76192a013a521743a4114d232a5146c87e076771d1822c3664d4b2e6af26e2e%26" 
+                     alt="Panglao Beaches" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-teal-700">Panglao Island (Resorts & Sands)</h3>
+                    <p class="text-sm text-gray-600">Pristine white sands, luxury accommodations, and world-class diving perfect for executive stays and relaxation after meetings.</p>
+                </div>
+            </div>
+
+            <!-- Destination 3: Island Hopping (Virgin Island) -->
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300">
+                <!-- Image: 1000084359.jpg (Virgin Island Sandbar) -->
+                <img src="https://lgl.one/image?url=https%3A%2F%2Fcdn.discordapp.com%2Fattachments%2F1184340277271926815%2F1257912423714207797%2Fimage.png%3Fex%3D66860d5c%26is%3D6684bc5c%26hm%3D5d5a9d82ff772e796e625a6767ae952219717df37c7689d042220e365005b4c6%26" 
+                     alt="Virgin Island Sandbar" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-teal-700">Panglao Island Hopping & Sea Tours</h3>
+                    <p class="text-sm text-gray-600">Start with Dolphin Watching, then snorkel at Balicasag Island and relax at the stunning Virgin Island sandbar. Ideal team break!</p>
+                </div>
+            </div>
+
+            <!-- Destination 4: Loboc River Cruise (Turtle Boat) -->
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300">
+                <!-- Image: 1000084358.jpg (Loboc River Cruise Turtle Boat) -->
+                <img src="https://lgl.one/image?url=https%3A%2F%2Fcdn.discordapp.com%2Fattachments%2F1184340277271926815%2F1257912423185324032%2Fimage.png%3Fex%3D66860d5c%26is%3D6684bc5c%26hm%3D1b5e54d890ac38cd1691c28c6680a6b99b53258595a805c872d82944b2f29393%26" 
+                     alt="Loboc River Cruise" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-teal-700">Loboc River Floating Cruise</h3>
+                    <p class="text-sm text-gray-600">Enjoy a unique floating lunch cruise. The tranquil river and special boats (like the Turtle Boat!) offer a perfect setting for informal client hosting.</p>
+                </div>
+            </div>
+
+            <!-- Destination 5: Tarsier Conservation (Close-up) -->
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300">
+                <!-- Image: 1000084364.jpg (Philippine Tarsier - high quality close-up) -->
+                <img src="https://lgl.one/image?url=https%3A%2F%2Fcdn.discordapp.com%2Fattachments%2F1184340277271926815%2F1257912424163016734%2Fimage.png%3Fex%3D66860d5c%26is%3D6684bc5c%26hm%3D6d997f748130882e7379fcb852f672a9e59d20c58e76f5b90f4569c7336153df%26" 
+                     alt="Philippine Tarsier" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-teal-700">Philippine Tarsier Sanctuary</h3>
+                    <p class="text-sm text-gray-600">Meet the world's smallest primate in its natural, protected habitat—a brief but unique stop on your Bohol itinerary.</p>
+                </div>
+            </div>
+
+            <!-- Destination 6: Bilar Man-Made Forest -->
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300">
+                <!-- Image: 1000084362.jpg (Bilar Man-Made Forest) -->
+                <img src="https://lgl.one/image?url=https%3A%2F%2Fcdn.discordapp.com%2Fattachments%2F1184340277271926815%2F1257912423982510100%2Fimage.png%3Fex%3D66860d5c%26is%3D6684bc5c%26hm%3D03511874a98ac91d9d93540243e8006b02660fc06e89cd2d61d15fc2a537f7c6%26" 
+                     alt="Bilar Man-Made Forest" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-teal-700">Bilar Man-Made Forest</h3>
+                    <p class="text-sm text-gray-600">The dense, uniform canopy provides a dramatic, cool setting for photo opportunities or a brief, refreshing pit stop.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Affordable Tour Packages Section (UPDATED) -->
+    <section id="packages" class="py-16 md:py-24 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-teal-800">
+                Affordable & Best-Value Tour Packages
+            </h2>
+            <p class="text-center max-w-3xl mx-auto text-lg text-gray-600 mb-16">
+                From budget-friendly exploration to complete island immersion, find the perfect package for your unforgettable Bohol vacation.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Package 1: Budget Bohol Break (Budget-Friendly Option) -->
+                <div class="bg-white p-8 rounded-xl shadow-2xl border-t-4 border-teal-600">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-2xl font-bold text-teal-800">Budget Bohol Break</h3>
+                        <div class="price-badge">PHP 5,999</div>
+                    </div>
+                    <p class="text-gray-500 mb-4 text-sm">3 Days / 2 Nights (Price per person)</p>
+                    <ul class="space-y-2 text-gray-700 mb-6 text-sm">
+                        <li class="flex items-start"><span class="text-teal-600 mr-2">&#10003;</span> Comfortable 3-Star/Hostel Accommodation</li>
+                        <li class="flex items-start"><span class="text-teal-600 mr-2">&#10003;</span> Bohol Countryside Tour (Tarsier, Hills, River)</li>
+                        <li class="flex items-start"><span class="text-teal-600 mr-2">&#10003;</span> Daily Breakfast</li>
+                        <li class="flex items-start"><span class="text-teal-600 mr-2">&#10003;</span> Shared Airport Transfers</li>
+                    </ul>
+                    <a href="#contact" class="block w-full text-center bg-teal-600 text-white py-3 rounded-lg font-semibold hover:bg-teal-700 transition duration-300">
+                        Book Now
+                    </a>
+                </div>
+
+                <!-- Package 2: Classic Bohol Adventure (Best Value - Highlighted) -->
+                <div class="bg-teal-600 p-8 rounded-xl shadow-2xl transform scale-105 z-10 text-white">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-2xl font-bold text-amber-300">Classic Bohol Adventure</h3>
+                        <div class="price-badge bg-amber-400 text-gray-900">PHP 8,999</div>
+                    </div>
+                    <p class="text-teal-200 mb-4 text-sm">4 Days / 3 Nights (Price per person)</p>
+                    <ul class="space-y-2 mb-6 text-sm">
+                        <li class="flex items-start"><span class="text-amber-300 mr-2">&#10003;</span> Premium 4-Star Resort Stay in Panglao</li>
+                        <li class="flex items-start"><span class="text-amber-300 mr-2">&#10003;</span> Panglao Island Hopping & Snorkel Day</li>
+                        <li class="flex items-start"><span class="text-amber-300 mr-2">&#10003;</span> Complete Countryside Tour & Lunch Cruise</li>
+                        <li class="flex items-start"><span class="text-amber-300 mr-2">&#10003;</span> Private Land Transportation</li>
+                    </ul>
+                    <a href="#contact" class="block w-full text-center bg-amber-400 text-gray-900 py-3 rounded-lg font-bold hover:bg-amber-300 transition duration-300 shadow-md">
+                        Best Seller - Book Now!
+                    </a>
+                </div>
+
+                <!-- Package 3: Premium Island Escape (Premium Option) -->
+                <div class="bg-white p-8 rounded-xl shadow-2xl border-t-4 border-teal-600">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-2xl font-bold text-teal-800">Premium Island Escape</h3>
+                        <div class="price-badge">PHP 11,999</div>
+                    </div>
+                    <p class="text-gray-500 mb-4 text-sm">5 Days / 4 Nights (Price per person)</p>
+                    <ul class="space-y-2 text-gray-700 mb-6 text-sm">
+                        <li class="flex items-start"><span class="text-teal-600 mr-2">&#10003;</span> Exclusive 5-Star Hotel or Private Villa Stay</li>
+                        <li class="flex items-start"><span class="text-teal-600 mr-2">&#10003;</span> Private Speedboat Charters (Diving/Snorkeling)</li>
+                        <li class="flex items-start"><span class="text-teal-600 mr-2">&#10003;</span> Sunset Dinners & Firefly Watching</li>
+                        <li class="flex items-start"><span class="text-teal-600 mr-2">&#10003;</span> All-Inclusive Dining and Dedicated Guide</li>
+                    </ul>
+                    <a href="#contact" class="block w-full text-center bg-teal-600 text-white py-3 rounded-lg font-semibold hover:bg-teal-700 transition duration-300">
+                        Design My Dream Trip
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Form (General Tourism Focus) -->
+    <section id="contact" class="py-16 md:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-6 text-teal-800">
+                Ready to Book Your Bohol Trip?
+            </h2>
+            <p class="text-center text-lg text-gray-600 mb-10">
+                Tell us about your travel group and what you'd like to experience!
+            </p>
+            
+            <form class="space-y-6 bg-gray-50 p-8 rounded-xl shadow-2xl">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Juan Dela Cruz" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-teal-500 focus:border-teal-500 transition duration-150" required>
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="juan@email.com" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-teal-500 focus:border-teal-500 transition duration-150" required>
+                </div>
+                <div>
+                    <label for="details" class="block text-sm font-medium text-gray-700 mb-1">Trip Details / Requirements</label>
+                    <textarea id="details" name="details" rows="4" placeholder="Planning a trip for 4 people for 5 days. We want the Classic Bohol Adventure package and are flexible with dates." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-teal-500 focus:border-teal-500 transition duration-150" required></textarea>
+                </div>
+                <button type="submit" class="w-full cta-bg text-white font-bold py-3 rounded-lg shadow-xl hover:opacity-90 transition duration-300 transform hover:scale-[1.01]">
+                    Submit Inquiry
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:flex md:justify-between md:text-left">
+            
+            <!-- Logo/Name -->
+            <div class="mb-6 md:mb-0">
+                <h3 class="text-3xl font-bold text-teal-400">Go Bohol Tours</h3>
+                <p class="text-sm text-gray-400 mt-2">Connecting Tourists to Paradise.</p>
+            </div>
+            
+            <!-- Quick Links -->
+            <div class="space-y-2">
+                <p class="font-semibold text-lg mb-2">Explore</p>
+                <a href="#destinations" class="block text-gray-400 hover:text-teal-400 transition duration-200">Our Destinations</a>
+                <a href="#packages" class="block text-gray-400 hover:text-teal-400 transition duration-200">Tour Packages</a>
+                <a href="#contact" class="block text-gray-400 hover:text-teal-400 transition duration-200">Inquire</a>
+            </div>
+
+            <!-- Contact Info Placeholder -->
+            <div class="mt-6 md:mt-0 space-y-2">
+                <p class="font-semibold text-lg mb-2">Contact</p>
+                <p class="text-gray-400">Email: info@goboholtours.ph</p>
+                <p class="text-gray-400">Phone: +63 917 555 TOUR</p>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-700 mt-8 pt-6 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs text-gray-500">
+            &copy; 2025 Go Bohol Tours. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
+
+                                                
